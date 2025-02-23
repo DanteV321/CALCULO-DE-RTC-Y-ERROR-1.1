@@ -25,7 +25,7 @@ function calculate() {
     let errorProm1 = ((parseFloat(errorIa1) + parseFloat(errorIc1)) / 2).toFixed(3);
     let errorProm2 = ((parseFloat(errorIa2) + parseFloat(errorIc2)) / 2).toFixed(3);
 
-    let multiplicadorEncontrado = ((parseFloat(rtcIa1) + parseFloat(rtcIa2) + parseFloat(rtcIc1) + parseFloat(rtcIc2)) / 4).toFixed(3);
+    let multiplicadorEncontrado = (rtcIa1 + rtcIa2 + rtcIc1 + rtcIc2) / 4).toFixed(3);
 
     // Mostrar los resultados en la página
     document.getElementById('rtcIa1').textContent = `RTC Ia1: ${rtcIa1}`;
