@@ -27,8 +27,6 @@ function calculate() {
 
     let multiplicadorEncontrado = (rtcIa1 + rtcIa2 + rtcIc1 + rtcIc2) / 4).toFixed(3);
 
-    let errordeprom = ((errorProm1 +errorProm2)/2).toFixed(3);
-
     // Mostrar los resultados en la página
     document.getElementById('rtcIa1').textContent = `RTC Ia1: ${rtcIa1}`;
     document.getElementById('errorIa1').textContent = `% ERROR Ia1: ${errorIa1}%`;
@@ -67,5 +65,4 @@ function clearFields() {
     document.getElementById('errorProm1').textContent = '';
     document.getElementById('errorProm2').textContent = '';
     document.getElementById('multiplicadorEncontrado').textContent = '';
-    document.getElementById('errordeprom').textContent = '';
 }
